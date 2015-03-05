@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A99939B21AA7C87800D970C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99939B11AA7C87800D970C3 /* AppDelegate.swift */; };
-		A99939B41AA7C87800D970C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99939B31AA7C87800D970C3 /* ViewController.swift */; };
 		A99939B71AA7C87800D970C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99939B51AA7C87800D970C3 /* Main.storyboard */; };
 		A99939B91AA7C87800D970C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99939B81AA7C87800D970C3 /* Images.xcassets */; };
 		A99939BC1AA7C87800D970C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99939BA1AA7C87800D970C3 /* LaunchScreen.xib */; };
 		A99939C81AA7C87900D970C3 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99939C71AA7C87900D970C3 /* TodoTests.swift */; };
+		A99939DE1AA9158800D970C3 /* TodoSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99939DD1AA9158800D970C3 /* TodoSettingsTableViewController.swift */; };
+		A99939E01AA9159000D970C3 /* TodoMainPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99939DF1AA9159000D970C3 /* TodoMainPageTableViewController.swift */; };
+		A99939E21AA9159700D970C3 /* TodoLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99939E11AA9159700D970C3 /* TodoLoginViewController.swift */; };
+		A99939E41AA915FB00D970C3 /* TodoTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99939E31AA915FB00D970C3 /* TodoTasksTableViewController.swift */; };
+		A99939E81AA916E800D970C3 /* TodoChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99939E71AA916E800D970C3 /* TodoChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,17 @@
 		A99939AC1AA7C87800D970C3 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99939B01AA7C87800D970C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A99939B11AA7C87800D970C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A99939B31AA7C87800D970C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A99939B61AA7C87800D970C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A99939B81AA7C87800D970C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A99939BB1AA7C87800D970C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A99939C11AA7C87900D970C3 /* TodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99939C61AA7C87900D970C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A99939C71AA7C87900D970C3 /* TodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTests.swift; sourceTree = "<group>"; };
+		A99939DD1AA9158800D970C3 /* TodoSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoSettingsTableViewController.swift; path = Settings/TodoSettingsTableViewController.swift; sourceTree = "<group>"; };
+		A99939DF1AA9159000D970C3 /* TodoMainPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoMainPageTableViewController.swift; path = MainPage/TodoMainPageTableViewController.swift; sourceTree = "<group>"; };
+		A99939E11AA9159700D970C3 /* TodoLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoLoginViewController.swift; path = Login/TodoLoginViewController.swift; sourceTree = "<group>"; };
+		A99939E31AA915FB00D970C3 /* TodoTasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoTasksTableViewController.swift; path = Tasks/TodoTasksTableViewController.swift; sourceTree = "<group>"; };
+		A99939E71AA916E800D970C3 /* TodoChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoChatViewController.swift; path = Chat/TodoChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +85,12 @@
 		A99939AE1AA7C87800D970C3 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
-				A99939B11AA7C87800D970C3 /* AppDelegate.swift */,
-				A99939B31AA7C87800D970C3 /* ViewController.swift */,
+				A99939E51AA916C400D970C3 /* Chat */,
+				A99939DC1AA914E200D970C3 /* Tasks */,
+				A99939D91AA9143A00D970C3 /* Settings */,
+				A99939D61AA9140200D970C3 /* Login */,
+				A99939D31AA9139800D970C3 /* MainPage */,
 				A99939B51AA7C87800D970C3 /* Main.storyboard */,
-				A99939B81AA7C87800D970C3 /* Images.xcassets */,
-				A99939BA1AA7C87800D970C3 /* LaunchScreen.xib */,
 				A99939AF1AA7C87800D970C3 /* Supporting Files */,
 			);
 			path = Todo;
@@ -90,6 +99,9 @@
 		A99939AF1AA7C87800D970C3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A99939B11AA7C87800D970C3 /* AppDelegate.swift */,
+				A99939B81AA7C87800D970C3 /* Images.xcassets */,
+				A99939BA1AA7C87800D970C3 /* LaunchScreen.xib */,
 				A99939B01AA7C87800D970C3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +122,46 @@
 				A99939C61AA7C87900D970C3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A99939D31AA9139800D970C3 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				A99939DF1AA9159000D970C3 /* TodoMainPageTableViewController.swift */,
+			);
+			name = MainPage;
+			sourceTree = "<group>";
+		};
+		A99939D61AA9140200D970C3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A99939E11AA9159700D970C3 /* TodoLoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		A99939D91AA9143A00D970C3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A99939DD1AA9158800D970C3 /* TodoSettingsTableViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		A99939DC1AA914E200D970C3 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				A99939E31AA915FB00D970C3 /* TodoTasksTableViewController.swift */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		A99939E51AA916C400D970C3 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A99939E71AA916E800D970C3 /* TodoChatViewController.swift */,
+			);
+			name = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A99939B41AA7C87800D970C3 /* ViewController.swift in Sources */,
+				A99939E01AA9159000D970C3 /* TodoMainPageTableViewController.swift in Sources */,
+				A99939DE1AA9158800D970C3 /* TodoSettingsTableViewController.swift in Sources */,
+				A99939E81AA916E800D970C3 /* TodoChatViewController.swift in Sources */,
+				A99939E21AA9159700D970C3 /* TodoLoginViewController.swift in Sources */,
+				A99939E41AA915FB00D970C3 /* TodoTasksTableViewController.swift in Sources */,
 				A99939B21AA7C87800D970C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
